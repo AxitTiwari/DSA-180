@@ -76,5 +76,4 @@ vector<vector<int>> findBridges(vector<vector<int>> &edges, int v, int e) {
         }
     }
     return result;
-
 }
