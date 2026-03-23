@@ -1,4 +1,5 @@
 #include <bits/stdc++.h> 
+using namespace std;
 
 // with reccursion only
 int get_min_count(vector<int> &num, int target) {
