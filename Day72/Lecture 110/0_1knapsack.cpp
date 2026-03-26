@@ -90,3 +90,23 @@ int knapsack(vector<int> weight, vector<int> value, int n, int maxWeight)
 	vector<vector<int>> dp(n, vector<int>(maxWeight+1, -1));
 	return memoization(weight, value, n-1, maxWeight, dp);
 }
+
+class Knapsack {
+
+	// ***aditya verma***
+	int reccursion(vector<int> &weight, vector<int> &value, 
+				int cur_index, int capacity_knapsack) {
+		
+		if (cur_index == 0 || capacity_knapsack == 0) return 0;
+
+		if (weight[cur_index-1] <= capacity_knapsack) {
+
+			return max(value[cur_index-1] + reccursion(weight, value, cur_index-1, capacity_knapsack - weight[cur_index-1]),
+					reccursion(weight, value, cur_index-1, capacity_knapsack));
+		}
+
+		else if (weight[cur_index-1] > capacity_knapsack) {
+			return reccursion(weight, value, cur_index-1, capacity_knapsack);
+		}
+	}
+};
