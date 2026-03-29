@@ -5,11 +5,14 @@ class Solution {
 private:
     int reccursion(vector<int> &v, int i, int j) {
 
+        // first and last point are consecutive: no triangle possible
         if (i+1 == j) {
             return 0;
         }
 
         int min_score = INT_MAX;
+
+        // take a point k from i+1 to <j in the polygon, and calculate score for all values of k. store minimum only
         for (int k = i+1; k < j; k++) {
             min_score = min(
                 min_score, 
