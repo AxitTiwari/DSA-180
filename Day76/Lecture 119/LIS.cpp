@@ -5,6 +5,8 @@ class MySolution {
   public:
     int reccursion(vector<int>& arr, int n, int cur, int prev) {
         
+        // TC: exponential
+
         if (cur == n) return 0;
         
         int take = 0; // **important '0'**
@@ -25,6 +27,8 @@ class MySolution {
         vector<vector<int>> &dp
     ) {
         
+        // TC: O(n**2)
+
         if (cur == n) return 0;
         
         // **prev = -1, -> look why
@@ -71,6 +75,7 @@ class MySolution {
     
     int space_optimised(vector<int>& arr) {
         
+        // TC: O(n**2)
         int n = arr.size();
         
         vector<int> cur_row(n+1, 0);
@@ -97,6 +102,34 @@ class MySolution {
         }
         return next_row[0];
     }
+
+    int dp_with_binary_search(int n, vector<int> a) {
+        
+        // TC: O(nlogn)
+        if (n == 0) {
+            return 0;
+        }
+        
+        vector<int> ans;
+        ans.push_back(a[0]);
+        
+        for (int i = 1; i < n; i++) {
+            
+            // push element in last in vector, 
+            // if last element at last is < a[i]
+            if (a[i] > ans.back()) {
+                ans.push_back(a[i]);
+            }
+            else {
+                
+                // find index of just badda element
+                int index = lower_bound(ans.begin(), ans.end(), a[i]) - ans.begin();
+                
+                ans[index] = a[i];
+            }
+        }
+        return ans.size();
+    }
 };
 
 // ****starts from here****
@@ -106,6 +139,8 @@ private:
 public:
     int lengthOfLIS(vector<int>& nums) {
         
-        return solution.space_optimised(nums);
+        // return solution.space_optimised(nums);
+
+        return solution.dp_with_binary_search(nums.size(), nums);
     }
 };
