@@ -52,8 +52,9 @@ This repository documents my **daily progress** in Data Structures and Algorithm
 11. 🔡 Tries  
 12. 🗂️ Hashing (Maps & Sets)  
 13. 🌐 Graphs  
-14. ⚡ Dynamic Programming  
-15. 🎯 Greedy Algorithms  
+14. ⚡ Dynamic Programming
+15. DP + Hashing
+16. 🎯 Greedy Algorithms  
 
 ---
 
@@ -83,11 +84,8 @@ This repository documents my **daily progress** in Data Structures and Algorithm
 ### ⚙️ Phase 3: Core Concepts (Pointers & Recursion)
 - Stack vs Heap Memory  
 - Pointers & Double Pointers  
-- Recursion & Divide & Conquer  
-- Backtracking:
-  - N-Queens  
-  - Sudoku Solver  
-
+- Recursion & Divide & Conquer
+  
 ---
 
 ### 🌉 Phase 4: Data Structures
@@ -101,12 +99,16 @@ This repository documents my **daily progress** in Data Structures and Algorithm
 ---
 
 ### 🚀 Phase 5: Advanced Algorithms
-- Tries & Hashing  
+- Tries & Hashing
+- Backtracking:
+  - N-Queens  
+  - Sudoku Solver  
 - Graphs:
   - BFS / DFS  
   - Dijkstra  
   - MST  
-- Dynamic Programming  
+- Dynamic Programming
+- DP + Hashing
 - Greedy Algorithms  
 
 ---
