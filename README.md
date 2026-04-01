@@ -53,7 +53,7 @@ This repository documents my **daily progress** in Data Structures and Algorithm
 12. 🗂️ Hashing (Maps & Sets)  
 13. 🌐 Graphs  
 14. ⚡ Dynamic Programming
-15. DP + Hashing
+15. 🐍 DP + Hashing
 16. 🎯 Greedy Algorithms  
 
 ---
