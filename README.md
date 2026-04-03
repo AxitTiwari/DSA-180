@@ -53,7 +53,7 @@ This repository documents my **daily progress** in Data Structures and Algorithm
 12. 🗂️ Hashing (Maps & Sets)  
 13. 🌐 Graphs  
 14. ⚡ Dynamic Programming
-15. 🐍 DP + Hashing, DP + Merge interval Pattern, DP + Decision Making, DP + Distict ways
+15. 🐍 DP + Hashing, DP + Merge interval Pattern, DP + Decision Making, DP + Distict ways, DP on string
 16. 🎯 Greedy Algorithms  
 
 ---
@@ -108,7 +108,7 @@ This repository documents my **daily progress** in Data Structures and Algorithm
   - Dijkstra  
   - MST  
 - Dynamic Programming
-- DP + Hashing, DP + Merge interval Pattern, DP + Decision Making, DP + Distict ways
+- DP + Hashing, DP + Merge interval Pattern, DP + Decision Making, DP + Distict ways, DP on strings
 - Greedy Algorithms  
 
 ---
