@@ -108,7 +108,7 @@ This repository documents my **daily progress** in Data Structures and Algorithm
   - Dijkstra  
   - MST  
 - Dynamic Programming
-- DP + Hashing, DP + Merge interval Pattern
+- DP + Hashing, DP + Merge interval Pattern, DP + Decision Making
 - Greedy Algorithms  
 
 ---
