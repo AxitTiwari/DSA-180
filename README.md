@@ -108,7 +108,7 @@ This repository documents my **daily progress** in Data Structures and Algorithm
   - Dijkstra  
   - MST  
 - Dynamic Programming
-- DP + Hashing, DP + Merge interval Pattern, DP + Decision Making
+- DP + Hashing, DP + Merge interval Pattern, DP + Decision Making, DP + Distict ways
 - Greedy Algorithms  
 
 ---
@@ -128,9 +128,9 @@ This repository documents my **daily progress** in Data Structures and Algorithm
 
 ## 📊 Progress Tracker
 
-- 📅 Current Day: **Day 79**
-- ✅ Completed: **79 / 180 days**
-- 🔥 Consistency Streak: **79 days**
+- 📅 Current Day: **Day 80**
+- ✅ Completed: **80 / 180 days**
+- 🔥 Consistency Streak: **80 days**
 
 ---
 
