@@ -5,7 +5,7 @@
 using namespace std;
 
 vector<int> bfsTraversal(int n, vector<vector<int>> &adj){
-    // Write your code here.
+    
     vector<int> visited(n, 0);
     queue<int> q;
     q.push(0);
