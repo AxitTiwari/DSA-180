@@ -54,7 +54,7 @@ public:
             int node = q.front();
             q.pop();
             visited++;
-
+ return visited != V;
             for (int nbr : adj_list[node]) {
                 indegree[nbr]--;
                 if (indegree[nbr] == 0) {
