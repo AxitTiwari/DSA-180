@@ -47,7 +47,7 @@ vector<pair<pair<int, int>, int>> calculatePrimsMST(int n, int m, vector<pair<pa
         int min_weight = INT_MAX;
         int node_with_min_w;
 
-        // ---find minimum distance node from our Data structure 'key'---
+        // ---find minimum distance node from our Data structure 'key'--- // not required if you use a min heap
         for (int cur_node = 1; cur_node <= n; cur_node++) {
 
             // if node 'cur_node' status is false and have smaller distance than min_weight, then process
