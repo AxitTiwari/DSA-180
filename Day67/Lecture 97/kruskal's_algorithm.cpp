@@ -43,13 +43,6 @@ void union_set(int u, int v, vector<int> &parent, vector<int> &rank) {
 
 int minimumSpanningTree(vector<vector<int>>& edges, int n)
 {
-  /*
-    Don't write main().
-    Don't read input, it is passed as function argument.    
-    No need to print anything.
-    Taking input and printing output is handled automatically.
-  */
-
   // sort the edges according to weights
   sort(edges.begin(), edges.end(), cmp);
 
