@@ -39,22 +39,23 @@ This repository documents my **daily progress** in Data Structures and Algorithm
 
 ## 🧠 Topics Covered
 
-1. 📊 Basics & Complexity  
-2. 🔢 Arrays (1D & 2D)  
-3. 🔍 Searching & Sorting  
-4. 🔤 Strings  
-5. 🔁 Recursion & Backtracking  
-6. 🔗 Linked List  
-7. 📚 Stack & Queue  
-8. 🌳 Binary Trees  
-9. 🌲 Binary Search Trees (BST)  
-10. 🏔️ Heaps & Priority Queues  
-11. 🔡 Tries  
-12. 🗂️ Hashing (Maps & Sets)  
-13. 🌐 Graphs  
-14. ⚡ Dynamic Programming
-15. 🐍 DP + Hashing, DP + Merge interval Pattern, DP + Decision Making, DP + Distict ways, DP on string
-16. 🎯 Greedy Algorithms  
+1.  📊 Basics & Complexity  
+2.  🔢 Arrays (1D & 2D)  
+3.  🔍 Searching & Sorting  
+4.  🔤 Strings  
+5.  🔁 Recursion  
+6.  🔗 Linked List  
+7.  📚 Stack & Queue  
+8.  🌳 Binary Trees  
+9.  🌲 Binary Search Trees (BST)  
+10. 🏔️ Heaps & Priority Queues
+11. 🗂️ Hashing (Hashmap) 
+12. 🔡 Tries
+13. 🔁 Backtracking   
+14. 🌐 Graphs  
+15. ⚡ Dynamic Programming
+16. 🐍 DP + Hashing, DP + Merge interval Pattern, DP + Decision Making, DP + Distict ways, DP on string
+17. 🎯 Greedy Algorithms  
 
 ---
 
