@@ -1,4 +1,4 @@
-https://leetcode.com/problems/n-queens-ii/?envType=problem-list-v2&envId=w4wg4g43
+// https://leetcode.com/problems/n-queens-ii/?envType=problem-list-v2&envId=w4wg4g43
 
 #include <bits/stdc++.h>
 using namespace std;
