@@ -129,9 +129,9 @@ This repository documents my **daily progress** in Data Structures and Algorithm
 
 ## 📊 Progress Tracker
 
-- 📅 Current Day: **Day 170**
-- ✅ Completed: **170/ 180 days**
-- 🔥 Consistency Streak: **170 days**
+- 📅 Current Day: **Day 171**
+- ✅ Completed: **171/ 180 days**
+- 🔥 Consistency Streak: **171 days**
 
 ---
 
