@@ -5,49 +5,35 @@ using namespace std;
 
 class Solution {
 public:
-    int countPaths(int n, vector<vector<int>>& roads) {
+    int findNumberOfLIS(vector<int>& nums) {
 
-        vector<pair<int, int>> adj[n];
+        int n = nums.size();
+        
+        vector<int> dp(n, 1), cnt(n, 1);
 
-        for (auto it : roads) {
+        int maxi = 0;
+        for (int i = 0; i < n; i++) {
 
-            adj[it[0]].push_back({it[1], it[2]});
-            adj[it[1]].push_back({it[0], it[2]});
-        }
+            for (int prev = 0; prev < i; prev++) {
 
-        std::priority_queue <pair<long long, long long>, std::vector<pair<long long, long long>>, std::greater<pair<long long, long long>>> pq;
-
-        vector<long long> dist(n, 1e12), ways(n, 0);
-
-        dist[0] = 0;
-        ways[0] = 1;
-        pq.push({0, 0});
-
-        int mod = (int)(1e9 + 7);
-
-        while (!pq.empty()) {
-
-            long long dis = pq.top().first;
-            long long node = pq.top().second;
-            pq.pop();
-
-            for (auto it : adj[node]) {
-
-                long long adj_node = it.first;
-                long adj_w = it.second;
-
-                // first time visit
-                if (dis + adj_w < dist[adj_node]) {
-
-                    dist[adj_node] = dis + adj_w;
-                    pq.push({dis + adj_w, adj_node});
-                    ways[adj_node] = ways[node];
+                if (nums[prev] < nums[i] && 1 + dp[prev] > dp[i]) {
+                    dp[i] = 1 + dp[prev];
+                    cnt[i] = cnt[prev];
                 }
-                else if (dis + adj_w == dist[adj_node]) {
-                    ways[adj_node] = (ways[adj_node] + ways[node]) % mod;
+                else if (nums[prev] < nums[i] && 1 + dp[prev] == dp[i]) {
+                    cnt[i] += cnt[prev];
                 }
             }
+
+            maxi = max(maxi, dp[i]);
         }
-        return ways[n-1] % mod;
+
+        int ans = 0;
+        for (int i = 0; i < n; i++) {
+            if (dp[i] == maxi) {
+                ans += cnt[i];
+            }
+        }
+        return ans;
     }
 };
